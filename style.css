@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.logo {
+    height: 110%;
+
+}
+
+
+
+.header{
+    background: #816F68;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    
+}
+
+
+.nav-link{
+    color: whitesmoke;
+    display: flex;
+}
+
+.nav-link:hover {
+
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 5rem;
+}
+
+.messi {
+    height: auto;
+    width: 700px;
+    border-radius: 6px;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero__text h1 {
+    font-weight: 600px;
+    font-size: 2rem;
+}
+
+.hero__text p {
+    max-width: 450px;
+}
+
+.text__btns {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    border: 2px solid slategray;
+    padding: 1rem 1.3rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn__cta {
+    background: slategray;
+    color: white;
+}
+
+.btn__more {
+    color: slategray;
+}
+
+
+.fifa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fifa p {
+    max-width: 450px;
+}
+
+.logo-whapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.logo-whapp img {
+    width: 40px;
+}
+
+
+
+@media (max-width: 400px) {
+    .hero {
+        flex-direction: column; 
+        height: 100vh;
+        padding: 0 20px;
+    }
+    .hero__text {
+        align-items: center;
+        
+    }
+    .hero__text p {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .messi {
+        width: 90%;
+    }
+}
